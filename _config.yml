@@ -1,5 +1,5 @@
 # site settings
-destination: _development/
+destination: _site_dev/
 title: HiveVM
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
