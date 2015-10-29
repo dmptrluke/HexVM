@@ -8,7 +8,7 @@ bundle install
 
 ## Development
 ```
-jekyll server
+jekyll serve
 ```
 Starts a local web server on port 4000. Stores current working files in `./_site_dev/`
 
@@ -16,4 +16,4 @@ Starts a local web server on port 4000. Stores current working files in `./_site
 ```
 jekyll build --config '_production.yml'
 ```
-Builds site. May take a long time. Outputs files in `./_site_prod/`. Upload these to web server
+Builds site. May take a long time. Outputs files in `./_site_prod/`. Upload these to web server.
