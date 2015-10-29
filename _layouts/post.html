@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: /blog/:title
+parent_paths:
+- /blog/
+parents:
+- Blog
+---
+
+<div class="blog single">
+  <div class="row">
+    <div class="col-sm-8">
+      <article>
+        {% if page.image %}
+          <img src="/images/blog/{{ page.image }}" alt="{{ page.image_alt }}">
+        {% endif %}
+        <div class="post-content">
+          <h2>
+            <a href="{{ site.baseurl }}{{ page.url }}">
+              {{ page.title }}
+            </a>
+          </h2>
+          <time class="thedate" datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %B %Y" }}</time>
+          <hr>
+          {{ content }}
+        </div>
+      </article>
+
+      <div class="comments">
+        <div id="thecomments">
+          <h2 class="badge">Comments</h2>
+          {% if site.env == "production" %}
+            {% disqus_comments %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="sidebar">
+        {% include blog_sidebar.html %}
+      </div>
+    </div>
+  </div>
+</div>

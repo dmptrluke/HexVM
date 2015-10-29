@@ -1,0 +1,27 @@
+
+
+                    <div class="widget">
+                        <form class="form-inline blogsearch" method="post" action="#">
+                            <input type="text" class="form-control" name="sld" onfocus="if (this.value == 'Search &amp; Press Enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search &amp; Press Enter';}" value="Search &amp; Press Enter">
+                        </form>
+                    </div>
+
+
+                    <div class="widget">
+                        <h3 class="badge">ADVERTISEMENT</h3>
+                        <a href=""><img src="/images/theme_forest_300x250.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="widget">
+                        <h3 class="badge">RECENT POSTS</h3>
+                        <ul>
+                        {% for post in site.posts limit:5 %}
+                          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
