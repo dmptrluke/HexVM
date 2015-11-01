@@ -6,15 +6,17 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+// local SASSets
+@import 'lib/block_grid_bootstrap';
+@import 'lib/slicknav/slicknav';
+
 // local assets
 @import 'lib/bootstrap_theme';
-@import 'lib/block_grid_bootstrap';
 @import 'lib/owl_carousel';
+@import 'lib/owl_theme';
 @import 'lib/animate';
 @import 'lib/circliful';
-@import 'lib/slicknav';
 
 // custom css
-@import 'style/owl_theme';
 @import 'style/template';
 @import 'style/custom';

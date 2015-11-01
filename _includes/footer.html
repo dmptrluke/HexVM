@@ -87,7 +87,7 @@
 <section class="copyright">
     <div class="row">
         <span>Copyright © 2015 - {{ site.time | date: '%Y' }} HiveVM<sup>™</sup></span>
-        <span class="pull-right ">{{ jekyll.environment }}_{{ site.time | date: '%x' }}</span>
+        <span class="pull-right ">{{ site.time | date: '%x %X' }} ({{ jekyll.environment }})</span>
     </div>
 </section>
 {% endunless %}
