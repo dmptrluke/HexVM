@@ -23,15 +23,15 @@ parents:
     <!-- VPS ORDER STEPS -->
     <div class="row">
         <div data-wow-delay="0.2s" class="col-sm-4 wow zoomIn hidden-xs">
-            <img src="/images/vps_step_1.png" class="img-responsive center-block" alt="" />
+            {% img vps_step_1 class:'img-responsive center-block' %}
         </div>
 
         <div data-wow-delay="0.4s" class="col-sm-4 wow zoomIn hidden-xs">
-            <img src="/images/vps_step_2.png" class="img-responsive center-block" alt="" />
+            {% img vps_step_2 class:'img-responsive center-block' %}
         </div>
 
         <div data-wow-delay="0.6s" class="col-sm-4 wow zoomIn hidden-xs">
-            <img src="/images/vps_step_3.png" class="img-responsive center-block" alt="" />
+            {% img vps_step_3 class:'img-responsive center-block' %}
         </div>
 
         <div class="col-sm-12 hidden-xs">
@@ -77,7 +77,6 @@ parents:
     </div>
 
     <!--  END OF ORDER STEPS  -->
-
 
     <div class="row no-js_hide">
         <div class="col-sm-12">
@@ -345,7 +344,7 @@ parents:
 <!-- End of Features -->
 
 {% contentfor scripts %}
-{% javascript jquery-ui.js %}
+{% javascript utility/jquery-ui.js %}
 <script>
 (
     function($, undefined) {

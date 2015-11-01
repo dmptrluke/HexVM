@@ -16,7 +16,7 @@ no_breadcrumb: True
                 <p><a class="btn btn-slide" href="/hosting/vps/">Order Now</a>
                 </p>
             </div>
-            <img src="/images/slider/1.jpg" alt="" />
+            {% img slider/1 %}
         </div>
 
         <div class="item">
@@ -26,7 +26,7 @@ no_breadcrumb: True
                 <p><a class="btn btn-slide" href="/hosting/shared/">Order Now</a>
                 </p>
             </div>
-            <img src="/images/slider/2.jpg" alt="" />
+            {% img slider/2 %}
         </div>
 
         <div class="item">
@@ -36,7 +36,7 @@ no_breadcrumb: True
                 <p><a class="btn btn-slide" href="/domains/">Order Now</a>
                 </p>
             </div>
-            <img src="/images/slider/3.jpg" alt="" />
+            {% img slider/3 %}
         </div>
 
 
@@ -62,7 +62,7 @@ no_breadcrumb: True
                 <p><a class="btn btn-slide" href="/hosting/vps/">Order Now</a>
                 </p>
             </div>
-            <img src="/images/slider/1.jpg" alt="" />
+            {% img slider/1 %}
         </div>
     </div>
 </div>
@@ -80,7 +80,7 @@ no_breadcrumb: True
     <div class="row spacing-70 ">
         <div class="col-sm-4">
             <div class="feature wow zoomIn" data-wow-delay="0.2s">
-                <img src="/images/round/rocket.png" srcset="/images/round/rocket@2x.png 2x, /images/round/rocket@3x.png 3x, /images/round/rocket@4x.png 4x" alt="" />
+                <img src="{% asset_path round/rocket %}" srcset="{% asset_path round/rocket@3x %} 2x, {% asset_path round/rocket@3x %} 3x, {% asset_path round/rocket@4x %} 4x" alt="" />
                 <h4>Lightning Fast</h4>
                 <p>All of our services are hosted on high-quality Intel Xeon dedicated servers. We will never oversell your resources.</p>
             </div>
@@ -88,7 +88,7 @@ no_breadcrumb: True
 
         <div class="col-sm-4">
             <div class="feature wow zoomIn" data-wow-delay="0.4s">
-                <img src="/images/round/drive.png" srcset="/images/round/drive@2x.png 2x, /images/round/drive@3x.png 3x, /images/round/drive@4x.png 4x" alt="" />
+                <img src="{% asset_path round/drive %}" srcset="{% asset_path round/drive@3x %} 2x, {% asset_path round/drive@3x %} 3x, {% asset_path round/drive@4x %} 4x" alt="" />
                 <h4>SSDs Inside</h4>
                 <p>All of our VPS servers are powered by server-grade SSDs in RAID, so you can be sure your data is safe.</p>
             </div>
@@ -96,7 +96,7 @@ no_breadcrumb: True
 
         <div class="col-sm-4">
             <div class="feature wow zoomIn" data-wow-delay="0.6s">
-                <img src="/images/round/support.png" srcset="/images/round/support@2x.png 2x, /images/round/support@3x.png 3x, /images/round/support@4x.png 4x" alt="" />
+                <img src="{% asset_path round/support %}" srcset="{% asset_path round/support@3x %} 2x, {% asset_path round/support@3x %} 3x, {% asset_path round/support@4x %} 4x" alt="" />
                 <h4>Awesome Support</h4>
                 <p>Our team of experienced support bees is ready to answer your questions 24/7.</p>
             </div>
@@ -230,7 +230,7 @@ no_breadcrumb: True
 
                 <div class="item">
                     <div class="testimonial-content">
-                        <div class="testimonialimg"><img src="/images/testimonial1.jpg" alt="" />
+                        <div class="testimonialimg">{% img testimonial1 %}
                         </div>
                         <p>Future social movement carbon emissions reductions voice; foster reduce child mortality measures theory of social change emergent women and children. Life-expectancy gender rights safeguards save lives social analysis dignity health developing nations. </p>
                         <div class="whoclient">
@@ -241,7 +241,7 @@ no_breadcrumb: True
 
                 <div class="item">
                     <div class="testimonial-content">
-                        <div class="testimonialimg"><img src="/images/testimonial2.jpg" alt="" />
+                        <div class="testimonialimg">{% img testimonial2 %}
                         </div>
                         <p>International tackle working alongside. Economic security, significant invest, Ford Foundation respect public service crowdsourcing research affordable health. Philanthropy equal opportunity assessment expert accelerate United Nations environmental, poverty, political, public.</p>
                         <div class="whoclient">
@@ -254,7 +254,7 @@ no_breadcrumb: True
 
                 <div class="item">
                     <div class="testimonial-content">
-                        <div class="testimonialimg"><img src="/images/testimonial3.jpg" alt="" />
+                        <div class="testimonialimg">{% img testimonial3 %}
                         </div>
                         <p>Save the world citizens of change; medicine immunize, convener design thinking global network Kickstarter empowerment prevention effectiveness. Service improving quality youth incubation foster. Expanding community ownership, urban experience in the field scalable</p>
                         <div class="whoclient">
@@ -271,7 +271,7 @@ no_breadcrumb: True
 </div>
 
 {% contentfor scripts %}
-{% javascript jquery.circliful.min.js %}
+{% javascript utility/jquery.circliful.min.js %}
 <script>
  /* Home Page Slider
 ========================================================================== */

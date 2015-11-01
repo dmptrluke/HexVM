@@ -1,0 +1,20 @@
+// bootstrap core
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// external assets
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+// local assets
+@import 'lib/bootstrap_theme';
+@import 'lib/block_grid_bootstrap';
+@import 'lib/owl_carousel';
+@import 'lib/animate';
+@import 'lib/circliful';
+@import 'lib/slicknav';
+
+// custom css
+@import 'style/owl_theme';
+@import 'style/template';
+@import 'style/custom';

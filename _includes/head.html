@@ -8,20 +8,10 @@
   <link href='http://fonts.googleapis.com/css?family=Hind:400,300,600,500,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-  {% stylesheet bootstrap %}
-  {% stylesheet bootstrap-theme %}
-  {% stylesheet block_grid_bootstrap %}
-  {% stylesheet fa %}
-  {% stylesheet owl.carousel %}
-  {% stylesheet owl.theme %}
-  {% stylesheet animate.min %}
-  {% stylesheet jquery.circliful %}
-  {% stylesheet slicknav %}
-  {% stylesheet style %}
-  {% stylesheet custom %}
+  {% stylesheet global %}
   {% contentblock styles %}
 
-  {% javascript modernizr-custom.js %}
+  {% javascript utility/modernizr-custom.js %}
   {% if jekyll.environment == "production" %}
     {% include analytics.html %}
   {% endif %}

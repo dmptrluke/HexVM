@@ -380,11 +380,11 @@ permalink: /domains/
 
     <div class="row">
         <div class="col-sm-9 center-block wow fadeInUp" data-wow-delay="1.2s">
-            <img src="/images/domains-img-1.png" alt="" class="img-responsive center-block spacing-70" />
+            {% img domains-img-1 class:"img-responsive center-block spacing-70" %}
         </div>
     </div>
 
-    <img src="/images/separator.png" alt="" class="img-responsive center-block spacing-70" />
+    {% img separator class:"img-responsive center-block spacing-70" %}
 
     <div class="row  spacing-70">
         <h2>Domain Names FAQ</h2>
@@ -468,7 +468,7 @@ permalink: /domains/
 </section>
 
 {% contentfor scripts %}
-{% javascript jquery.tablesorter.min %}
+{% javascript utility/jquery.tablesorter.min %}
 <script type="text/javascript">
  $(document).ready(function() {
      $("#domainextensions").owlCarousel({
