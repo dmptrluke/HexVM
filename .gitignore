@@ -2,6 +2,7 @@
 .code-highligher-cache/
 .jekyll-assets-cache/
 .asset-cache/
-_site*/
+_site_dev/
+_site_prod/
 Gemfile.lock
 .jekyll-metadata
