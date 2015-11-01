@@ -143,12 +143,12 @@ parents:
 
 <!--  Pricing Tables -->
 <section class="pricingtables vps">
-    <div class="row no-js_hide">
+    {% comment %}<div class="row no-js_hide">
         <div class="col-sm-12">
-            <h2>Details per VPS plan</h2>
-            <p>Opportunity organization think tank, non-partisan fundraising campaign social responsibility</p>
+            <h2>More info</h2>
+            <p>Full details about each of our VPS plans</p>
         </div>
-    </div>
+    </div> {% endcomment %}
 
     <div class="row spacing-70">
 
@@ -319,7 +319,7 @@ parents:
         <div class="col-sm-3">
             <div class="feature wow zoomIn" data-wow-delay="0.4s">
                 <i class="fa fa-server"></i>
-                <h4>Control Panel</h4>
+                <h4>KVM powered</h4>
                 <p>John Lennon, involvement Gandhi, working alongside cornerstone. Arab Spring; honesty save lives think.</p>
             </div>
         </div>
@@ -328,7 +328,7 @@ parents:
             <div class="feature wow zoomIn" data-wow-delay="0.6s">
                 <i class="fa fa-hdd-o"></i>
                 <h4>SSD storage</h4>
-                <p>Respond our grantees and partners, youth, fight against malnutrition experience in the field detection.</p>
+                <p>All of our VPS servers are powered by server-grade SSDs for maximum performance and reliability.</p>
             </div>
         </div>
 
@@ -336,7 +336,7 @@ parents:
             <div class="feature wow zoomIn" data-wow-delay="0.8s">
                 <i class="fa fa-life-ring"></i>
                 <h4>24/7 support</h4>
-                <p>Respond our grantees and partners, youth, fight against malnutrition experience in the field detection.</p>
+                <p>Our team of experienced support bees is ready to answer your questions 24/7.</p>
             </div>
         </div>
 
@@ -344,7 +344,7 @@ parents:
 </section>
 <!-- End of Features -->
 
-{% content_for scripts %}
+{% contentfor scripts %}
 {% javascript jquery-ui.js %}
 <script>
 (
@@ -554,4 +554,4 @@ $(document).ready(function() {
     });
 });
 </script>
-{% endcontent_for %}
+{% endcontentfor %}

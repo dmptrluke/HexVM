@@ -12,7 +12,6 @@ url: "http://hivevm.com" # the base hostname & protocol for your site
 # build settings
 markdown: kramdown
 highlighter: rouge
-env: development
 
 include: ['_pages']
 
@@ -27,9 +26,7 @@ collections:
 
 # assets
 assets:
-  cache: true
-  js_compressor: uglifier
-  css_compressor: sass
+  digest: true
   sources:
     - _assets/css
     - _assets/js

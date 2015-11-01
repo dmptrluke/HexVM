@@ -275,7 +275,7 @@ span.chooseprice:after { border: solid transparent; border-color: rgba(222, 98, 
 .r-tabs .r-tabs-accordion-title.r-tabs-state-disabled { opacity: 0.5; }
 #shared-hosting-tabs .r-tabs-panel { margin-top: 120px!important; }
 #shared-hosting-tabs .centralicon { display: table; margin: 0 auto; margin-top: -90px; text-align: center; }
-#shared-hosting-tabs .centralicon img { border: 10px solid #e1e3e4; border-radius: 100%; }
+#shared-hosting-tabs .centralicon img { border: 10px solid #e1e3e4; border-radius: 100%; height: 148px; width: 148px; }
 #shared-hosting-tabs #feature1 h5, #shared-hosting-tabs #feature5 h5 { font-size: 25px; line-height: 1.3; margin-bottom: 17px; text-align: left; }
 #shared-hosting-tabs #feature1 p, #shared-hosting-tabs #feature5 p { padding-left: 0; padding-roght: 0; text-align: left; }
 #shared-hosting-tabs h5 { font-size: 25px; line-height: 1.3; margin-bottom: 17px; text-align: center; }

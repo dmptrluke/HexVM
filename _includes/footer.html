@@ -84,15 +84,12 @@
         </div>
     </div>
 </section>
-<div class="copyright">
-  <div class="container">
+<section class="copyright">
     <div class="row">
-      <div class="col-sm-12">
-        <p class="text-center">Copyright © 2015 HiveVM<sup>™</sup></p>
-      </div>
+        <span>Copyright © 2015 - {{ site.time | date: '%Y' }} HiveVM<sup>™</sup></span>
+        <span class="pull-right ">{{ jekyll.environment }}_{{ site.time | date: '%x_%X' }}</span>
     </div>
-  </div>
-</div>
+</section>
 {% endunless %}
 <!--  End of Footer -->
 <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
@@ -105,6 +102,6 @@
 {% javascript wow.min.js %}
 {% javascript waypoints.min.js %}
 {% javascript jquery.slicknav.min.js %}
-{% javascript retina.min.js %}
+{% javascript jquery.responsiveTabs.js %}
 {% javascript custom.js %}
-{% yield scripts %}
+{% contentblock scripts %}

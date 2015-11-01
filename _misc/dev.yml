@@ -1,0 +1,3 @@
+# for stupid legacy plugins
+env: development
+minify_html: false

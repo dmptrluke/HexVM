@@ -29,7 +29,7 @@ parents:
       <div class="comments">
         <div id="thecomments">
           <h2 class="badge">Comments</h2>
-          {% if site.env == "production" %}
+          {% if jekyll.environment == "production" %}
             {% disqus_comments %}
           {% endif %}
         </div>

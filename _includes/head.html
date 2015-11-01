@@ -19,10 +19,10 @@
   {% stylesheet slicknav %}
   {% stylesheet style %}
   {% stylesheet custom %}
-  {% yield styles %}
+  {% contentblock styles %}
 
   {% javascript modernizr-custom.js %}
-  {% if site.env == "production" %}
+  {% if jekyll.environment == "production" %}
     {% include analytics.html %}
   {% endif %}
 </head>
