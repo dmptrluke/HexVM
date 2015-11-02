@@ -34,8 +34,18 @@ assets:
     - _assets/images
 
 # blog
-permalink: /blog/:year-:month-:day-:title/
+permalink: /blog/:year/:title/
 
+jekyll-archives:
+  enabled:
+    - year
+    - categories
+  layouts:
+    year: archive_time
+    category: archive_name
+  permalinks:
+    year: '/blog/:year/'
+    category: '/blog/:name/'
 # comments
 disqus:
   shortname: hivevm

@@ -2,17 +2,22 @@
 <div class="breadcrumbs">
     <div class="row">
         <div class="col-sm-6">
-            <h1>{{ page.title }}</h1>
+          <h1>
+            {% ifnothascontent title_override %}{{ page.title }}{% endifnothascontent %}{% contentblock title_override %}
+          </h1>
         </div>
         <div class="col-sm-6">
+          {% ifnothascontent crumbs_override %}
             <ol class="breadcrumb">
               <li>You are here: </li>
               <li><a href="/">Home</a>
               {% for path in page.parent_paths %}
               <li><a{% if path != null %} href="{{ path }}"{% endif %}>{{ page.parents[forloop.index0] }}</a></li>
               {% endfor %}
-              <li class="active">{% if page.title_short %}{{ page.title_short }}{% else %}{{ page.title}}{% endif %}</li>
+              <li class="active">{% if page.title_short %}{{ page.title_short }}{% else %}{{ page.title }}{% endif %}</li>
             </ol>
+            {% endifnothascontent %}
+            {% contentblock crumbs_override %}
         </div>
     </div>
 </div>

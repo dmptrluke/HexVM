@@ -1,0 +1,24 @@
+---
+layout: archive
+---
+{% contentfor title_override %}
+  {% if page.type == 'year' %}
+    Blog Archive - {{ page.date | date: "%Y" }}
+  {% elsif page.type == 'month' %}
+    Blog Archive - {{ page.date | date: "%B %Y" }}
+  {% endif %}
+{% endcontentfor %}
+
+{% contentfor crumbs_override %}
+  <ol class="breadcrumb">
+    <li>You are here: </li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    {% if page.type == 'year' %}
+      <li class="active">{{ page.date | date: '%Y' }}</li>
+    {% elsif page.type == 'month' %}
+      <li><a href="/blog/{{ page.date | date: '%Y' }}/">{{ page.date | date: '%Y' }}</a></li>
+      <li class="active">{{ page.date | date: '%m' }}</li>
+  {% endif %}
+  </ol>
+{% endcontentfor %}

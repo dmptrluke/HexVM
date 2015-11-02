@@ -1,14 +1,10 @@
 ---
 layout: default
-title: Blog
-title_short: Blog
-layout: default
-permalink: /blog/
 ---
 <div class="blog">
   <div class="row">
     <div class="col-sm-8">
-      {% for post in site.posts %}
+      {% for post in page.posts %}
         {% include blog/entry_text.html %}
       {% endfor %}
     </div>

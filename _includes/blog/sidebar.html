@@ -1,0 +1,18 @@
+<div class="widget">
+    <h3 class="badge">CATEGORIES</h3>
+    <ul>
+    {% for category in site.categories %}
+      <li><a href="/blog/{{category | first | slugify }}/">{{category | first }} <span class="badge">{{ category | last | size }}</span></a></li>
+    {% endfor %}
+    </ul>
+</div>
+<div class="widget">
+    <h3 class="badge">RECENT POSTS</h3>
+    <ul>
+    {% for post in site.posts limit:5 %}
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+</div>
+</div>

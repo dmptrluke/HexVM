@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Welkcome to Jekyll!"
-date:   2015-10-12 23:23:17
+title:  "New Plan Pricing"
 comments: true
-image: blog_image.jpg
-categories: jekyll update
+image: blog/blog_image.jpg
+categories: [Announcements, Web Hosting, VPS]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -14,6 +13,6 @@ Jekyll also offers powerful support for code snippets:
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
-[jekyll]:      http://jekyllrb.com
+[jekyll]:      http://jekyllrb.com page.url %}
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-help]: https://github.com/jekyll/jekyll-help

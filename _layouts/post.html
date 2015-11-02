@@ -1,18 +1,23 @@
 ---
 layout: default
-permalink: /blog/:title
-parent_paths:
-- /blog/
-parents:
-- Blog
 ---
+
+{% contentfor crumbs_override %}
+  <ol class="breadcrumb">
+    <li>You are here: </li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/blog/{{ page.date | date: '%Y' }}/">{{ page.date | date: '%Y' }}</a></li>
+    <li class="active">{{ page.title }}</li>
+  </ol>
+{% endcontentfor %}
 
 <div class="blog single">
   <div class="row">
     <div class="col-sm-8">
       <article>
         {% if page.image %}
-          <img src="/images/blog/{{ page.image }}" alt="{{ page.image_alt }}">
+          {{ page.image | img }}
         {% endif %}
         <div class="post-content">
           <h2>
@@ -23,6 +28,11 @@ parents:
           <time class="thedate" datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: "%-d %B %Y" }}</time>
           <hr>
           {{ content }}
+          <div class="tagcloud">
+            {% for category in page.categories %}
+              <a href="/blog/{{ category | slugify }}/">{{ category }}</a>
+            {% endfor %}
+          </div>
         </div>
       </article>
 
@@ -37,7 +47,7 @@ parents:
     </div>
     <div class="col-sm-4">
       <div class="sidebar">
-        {% include blog_sidebar.html %}
+        {% include blog/sidebar.html %}
       </div>
     </div>
   </div>
