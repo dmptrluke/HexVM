@@ -18,3 +18,8 @@ Starts a local web server on port 4000. Stores current working files in `./_site
 build
 ```
 Builds site. May take a long time. Outputs files in `./_site_prod/`. Upload these to web server.
+
+## License
+```
+Copyright 2015 Luke Rogers
+```
