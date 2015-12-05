@@ -10,7 +10,7 @@
     </h2>
     <time class="thedate" datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%-d %B %Y" }}</time>
     <hr>
-    {{ post.content | markdownify }}
+    {{ post.excerpt | markdownify }}
     <a class="button" href="{{ site.baseurl }}{{ post.url }}">Continue reading →</a>
   </div>
 </article>

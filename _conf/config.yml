@@ -10,7 +10,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://hivevm.com" # the base hostname & protocol for your site
 
 # build settings
-markdown: kramdown
+markdown: redcarpet
 highlighter: rouge
 
 include: ['_pages']
@@ -35,6 +35,7 @@ assets:
 
 # blog
 permalink: /blog/:year/:title/
+excerpt_separator: <!--more-->
 
 jekyll-archives:
   enabled:
@@ -56,8 +57,8 @@ navigation:
     href: /
   - title: Virtual Servers
     href: /hosting/vps/
-  - title: Shared Hosting
-    href: /hosting/shared/
+  - title: Web Hosting
+    href: /hosting/web/
   - title: About
     dropdown:
     - title: About Us
@@ -69,7 +70,7 @@ navigation:
   - title: Clients
     dropdown:
       - title: Client Area
-        href: http://clients.hivevm.com/
+        href: https://clients.hivevm.com/
       - title: VPS Panel
         href: http://vps.hivevm.com/
       - title: Shared Panel

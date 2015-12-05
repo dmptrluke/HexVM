@@ -2,15 +2,13 @@
 layout: default
 ---
 
-{% contentfor crumbs_override %}
-  <ol class="breadcrumb">
+{% contentfor crumbs_override %}<ol class="breadcrumb">
     <li>You are here: </li>
     <li><a href="/">Home</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/blog/{{ page.date | date: '%Y' }}/">{{ page.date | date: '%Y' }}</a></li>
     <li class="active">{{ page.title }}</li>
-  </ol>
-{% endcontentfor %}
+  </ol>{% endcontentfor %}
 
 <div class="blog single">
   <div class="row">
@@ -35,6 +33,26 @@ layout: default
           </div>
         </div>
       </article>
+
+      <!-- Look the author details up from the site config. -->
+      {% assign author = site.data.authors[page.author] %}
+
+      <!-- Output author details if some exist. -->
+      {% if author %}
+        <div class="author-wrap">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="author-gravatar">{{ author.avatar | img }}</div>
+            </div>
+            <div class="col-sm-10">
+              <div class="author-info">
+                <div class="author author-title"><h6>{{ author.name }}</h6></div>
+                <div class="author-description"><p>{{ author.description }}</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
 
       <div class="comments">
         <div id="thecomments">

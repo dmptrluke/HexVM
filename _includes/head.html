@@ -5,8 +5,8 @@
   <title>{% ifnothascontent title_override %}{{ page.title }}{% endifnothascontent %}{% contentblock title_override %} - {{ site.title }}</title>
   <link rel="shortcut icon" href="/images/icons/favicon.png" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href='http://fonts.googleapis.com/css?family=Hind:400,300,600,500,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Hind:400,300,600,500,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
   {% stylesheet global %}
   {% contentblock styles %}

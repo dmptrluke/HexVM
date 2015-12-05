@@ -32,7 +32,7 @@ body { background: #fff; color: #5a5a5a; font-family: 'hind', Optima, Segoe, "Se
 .center-block { float: none; }
 a { color: #DE6262; outline: 0; text-decoration: none; }
 a:hover, a:active, a:focus { outline: 0; text-decoration: none; color:#6E6E6E; }
-code { background: #f5f2f0; border: 0; border-radius: 6px; color: #303038; display: block; font-family: consolas, monaco, 'andale mono', monospace; font-weight: normal; line-height: 1.3; margin: 8px 0; padding: 12px; text-shadow: 0 1px white; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap; }
+code { background: #f5f2f0; border: 0; border-radius: 6px; color: #303038; display: block; font-family: consolas, monaco, 'andale mono', monospace; font-weight: normal; line-height: 1.3; margin: 8px 0; padding: 12px; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap; }
 
 img {  max-width: 100%;  height: auto; -ms-interpolation-mode: bicubic; display: inline-block;  vertical-align: middle;}
 
@@ -51,6 +51,8 @@ p { font-family: inherit; font-size: 17px; font-weight: normal; line-height: 1.4
 hr { border: solid #eff0f4; border-width: 1px 0 0; clear: both; height: 0; margin: 21px 0; }
 hr.small { border: solid #DE6262; border-width: 1px 0 0; clear: both; height: 0; margin:0 auto; margin-top:27px; margin-bottom:27px; max-width:150px; }
 .spacing-70 { padding-top: 70px; }
+.spacing-60 { padding-top: 60px; }
+.spacing-50 { padding-top: 50px; }
 .spacing-40 { padding-top: 40px; }
 
 /* Bootstrap 5 columns */
@@ -137,7 +139,7 @@ nav#desktop-menu {  padding: 0; float:right; text-align: left; }
 /* End of Tab Slider */
 
 /* Features */
-.features { overflow: hidden; padding: 75px 0; }
+.features { overflow: hidden; padding: 65px 0 75px; }
 .features h2 { font-weight: 900; margin-bottom: 12px; text-align: center; }
 .features span { display: block; font-size: 18px; font-weight: 300; text-align: center; }
 .feature { text-align: center; }
@@ -501,8 +503,6 @@ a.order-vps { color: #fff; font-size:17px; font-weight: 900; padding:6px 15px; b
     height: 40px;    margin-right: 10px;    padding: 6px;    text-align: center;    width: 40px;}
 .datacenter-facilities .facility h3 .title {    font-size: 20px;    font-weight: 400;}
 .datacenter-facilities .facility p {    margin: 0 40px;}
-.partners {background: #efefef; padding:45px 0}
-#datacenter-partners .item{    margin: 3px; text-align: center   }
 .datacenter-map {margin-top:55px;}
 
 /* ==============================
@@ -700,6 +700,8 @@ ol.breadcrumb li:first-child { display: none; }
 #mainslider-nav .item { font-size: 11px; letter-spacing: 0; padding: 10px 0px; }
 #mainslider-nav .item i { display: block; font-size: 15px; margin-bottom: 6px; padding-right: 0; }
 .spacing-70 { padding-top: 30px; }
+.spacing-60 { padding-top: 30px; }
+.spacing-50 { padding-top: 30px; }
 .feature p, .pricingtables .panel, .statistics span { margin-bottom: 18px; }
 .pricingtables { padding-bottom: 35px; }
 .offerdescription { text-align: center; }
