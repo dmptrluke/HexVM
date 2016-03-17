@@ -370,18 +370,19 @@ a.order-vps { color: #fff; font-size:17px; font-weight: 900; padding:6px 15px; b
  /* End of Pricing Tables - Dedicated servers Page */
 
  /* Responsive Table - Dedicated servers Page */
-.servers-table {background: #fff; overflow: hidden; padding: 45px 0; }
-.products-table {min-width:100%; border:1px solid #DFE0E5; font-family: 'hind', sans-serif; background: #F7F7F7;}
-.products-table thead th {background:#F2F3F6; color:#6E6E6E!important; font-weight:700;  font-size:13px; font-weight:bold; border-left:1px solid #DFE0E5; border-right:1px solid #DFE0E5; border-bottom:1px solid #DFE0E5;}
-.products-table th {font-weight: normal; font-smoothing: antialiased; padding:16px 12px; color: #6E6E6E;   font-size: 15px; background: #fff; }
-.products-table td {color: #6E6E6E;    padding:16px 12px; font-size: 15px; border-bottom:1px solid #DFE0E5;}
-.products-table td:last-child, .products-table thead th:last-child {text-align: center;}
-.products-table tr.even, .products-table tr.alt, .products-table tr:nth-of-type(even) {  background: #fff!important; }
-.products-table td span {background:#DE6262; padding:3px 7px 5px; margin:0 auto; display: block}
-.products-table td span:hover {background:#282828;}
-.products-table td span a{color:#fff; font-size: 12px }
-.products-table td span a:hover{text-decoration: none}
- /* End of Responsive Table - Dedicated servers Page */
+ .servers-table {background: #fff; overflow: hidden; padding: 45px 0; }
+ .products-table {min-width:100%; border:1px solid #DFE0E5; font-family: 'hind', sans-serif; background: #F7F7F7;}
+ .products-table thead th {background:#F2F3F6; color:#6E6E6E!important; font-weight:700;  font-size:13px; font-weight:bold; border-left:1px solid #DFE0E5; border-right:1px solid #DFE0E5; border-bottom:1px solid #DFE0E5;}
+ .products-table th {font-weight: normal;    -webkit-font-smoothing: antialiased;   padding:16px 12px; color: #6E6E6E;   font-size: 15px; background: #fff; }
+ .products-table td {color: #6E6E6E;    padding:16px 12px; font-size: 15px; border-bottom:1px solid #DFE0E5;}
+ .products-table td:last-child, .products-table thead th:last-child {text-align: center;}
+ .products-table tr.even, .products-table tr.alt, .products-table tr:nth-of-type(even) { background: #fff!important; }
+ .products-table td span {padding:3px 7px 5px; margin:0 auto; display: block}
+ .products-table td:last-child span {background:#DE6262;}
+ .products-table td:last-child span:hover {background:#282828;}
+ .products-table td:last-child span a{color:#fff; font-size: 12px }
+ .products-table td:last-child span a:hover{text-decoration: none}
+  /* End of Responsive Table - Dedicated servers Page */
 
 /* ==============================
    8 = Domains
@@ -751,6 +752,13 @@ ol.breadcrumb { display: table; float: none; margin: 0 auto; }
 .sliderbottom [class*='col-']:last-child {border-bottom:0;}
 #plan_option h6 span.how_much {position:relative; background:#72AC94; display:table; margin:0 auto; text-align: center; color:#fff; padding:8px 17px; margin-top:30px; margin-bottom:0; font-size:20px;}
 #plan_option h6 span.how_much:after {  top: 100%;  left: 50%;  border: solid transparent;  content: " ";  height: 0;  width: 0;  position: absolute;  pointer-events: none;  border-color: rgba(114, 172, 148, 0);  border-top-color: #72AC94;  border-width: 10px;  margin-left: -10px;}
+.products-table td span.tablesaw-cell-content {text-align:left; display:block; width:100%; max-width: 100%; padding:0; margin:4px 0 0;}
+.products-table td:last-child, .products-table thead th:last-child {text-align: left;}
+.products-table td:last-child .tablesaw-cell-label {display:none;}
+.products-table td:last-child span {text-align:center; padding:6px; font-size:17px; font-weight:700;}
+
+#tld-table td span.tablesaw-cell-content {text-align:left; display:block; width:100%; max-width: 100%; padding:0; margin:4px 0 0;}
+#tld-table td .tablesaw-cell-label {width:100%;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {

@@ -1,8 +1,8 @@
-/*
+/*!
  *  Project: jquery.responsiveTabs.js
  *  Description: A plugin that creates responsive tabs, optimized for all devices
  *  Author: Jelle Kralt (jelle@jellekralt.nl)
- *  Version: 1.4.5
+ *  Version: 1.5.1
  *  License: MIT
  */
 
@@ -21,6 +21,8 @@
         animationQueue: false,
         duration: 500,
         scrollToAccordion: false,
+        scrollToAccordionOffset: 0,
+        accordionTabElement: '<div></div>',
         activate: function(){},
         deactivate: function(){},
         load: function(){},
@@ -30,6 +32,8 @@
             stateActive: 'r-tabs-state-active',
             stateDisabled: 'r-tabs-state-disabled',
             stateExcluded: 'r-tabs-state-excluded',
+            container: 'r-tabs',
+            ul: 'r-tabs-nav',
             tab: 'r-tabs-tab',
             anchor: 'r-tabs-anchor',
             panel: 'r-tabs-panel',
@@ -146,8 +150,8 @@
         var id = 0;
 
         // Add the classes to the basic html elements
-        this.$element.addClass('r-tabs'); // Tab container
-        $ul.addClass('r-tabs-nav'); // List container
+        this.$element.addClass(_this.options.classes.container); // Tab container
+        $ul.addClass(_this.options.classes.ul); // List container
 
         // Get tab buttons and store their data in an array
         $('li', $ul).each(function() {
@@ -161,7 +165,7 @@
                 $anchor = $('a', $tab);
                 panelSelector = $anchor.attr('href');
                 $panel = $(panelSelector);
-                $accordionTab = $('<div></div>').insertBefore($panel);
+                $accordionTab = $(_this.options.accordionTabElement).insertBefore($panel);
                 $accordionAnchor = $('<a></a>').attr('href', panelSelector).html($anchor.html()).appendTo($accordionTab);
 
                 var oTab = {
@@ -320,6 +324,7 @@
      */
     ResponsiveTabs.prototype._openTab = function(e, oTab, closeCurrent, stopRotation) {
         var _this = this;
+        var scrollOffset;
 
         // Check if the current tab has to be closed
         if(closeCurrent) {
@@ -342,17 +347,21 @@
             // When finished, set active class to the panel
             oTab.panel.removeClass(_this.options.classes.stateDefault).addClass(_this.options.classes.stateActive);
 
-           // And if enabled and state is accordion, scroll to the accordion tab
+            // And if enabled and state is accordion, scroll to the accordion tab
             if(_this.getState() === 'accordion' && _this.options.scrollToAccordion && (!_this._isInView(oTab.accordionTab) || _this.options.animation !== 'default')) {
+
+                // Add offset element's height to scroll position
+                scrollOffset = oTab.accordionTab.offset().top - _this.options.scrollToAccordionOffset;
+
                 // Check if the animation option is enabled, and if the duration isn't 0
                 if(_this.options.animation !== 'default' && _this.options.duration > 0) {
                     // If so, set scrollTop with animate and use the 'animation' duration
                     $('html, body').animate({
-                        scrollTop: oTab.accordionTab.offset().top
+                        scrollTop: scrollOffset
                     }, _this.options.duration);
                 } else {
                     //  If not, just set scrollTop
-                    $('html, body').scrollTop(oTab.accordionTab.offset().top);
+                    $('html, body').scrollTop(scrollOffset);
                 }
             }
         });

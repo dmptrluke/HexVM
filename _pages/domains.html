@@ -205,7 +205,7 @@ permalink: /domains/
     <div class="domains-table">
         <div class="row">
             <div class="col-sm-12">
-                <table data-wow-delay="0.3s" id="tld-table" class="tablesorter responsive wow fadeInUp tablesaw tablesaw-stack" data-mode="stack">
+                <table data-wow-delay="0.3s" id="tld-table" class="tablesorter responsive wow fadeInUp tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                     <thead>
                         <tr>
                             <th>DOMAIN NAME</th>
@@ -468,6 +468,8 @@ permalink: /domains/
 </section>
 
 {% contentfor scripts %}
+{% javascript utility/tablesaw.stackonly %}
+{% javascript utility/tablesaw.init %}
 {% javascript utility/jquery.tablesorter.min %}
 <script type="text/javascript">
  $(document).ready(function() {
