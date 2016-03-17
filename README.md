@@ -7,7 +7,7 @@ bundle install
 ```
 Currently helper scripts only run on windows. I will fix this.
 
-## Install-Mac
+## Launch-Server-Mac
 export JEKYLL_ENV=development
 jekyll serve --config ./_conf/config.yml,./_conf/dev.yml --destination "_site_dev/"
 
