@@ -1,4 +1,4 @@
-# HiveVM
+# HexVM
 ## Install
 Needs ruby. Commands to run in project root:
 ```
