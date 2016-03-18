@@ -467,21 +467,25 @@ permalink: /domains/
     </div>
 </section>
 
+{% contentfor prestyles %}
+{% stylesheet lib/_tablesaw_stackonly %}
+{% endcontentfor %}
+
 {% contentfor scripts %}
 {% javascript utility/tablesaw.stackonly %}
 {% javascript utility/tablesaw.init %}
 {% javascript utility/jquery.tablesorter.min %}
-<script type="text/javascript">
- $(document).ready(function() {
-     $("#domainextensions").owlCarousel({
-         autoPlay: 4000,
-         items: 8,
-         itemsDesktop: [1199, 6],
-         itemsDesktopSmall: [979, 6],
-         pagination: false
-     });
+<script>
+$(document).ready(function() {
+    $("#domainextensions").owlCarousel({
+        autoPlay: 4000,
+        items: 8,
+        itemsDesktop: [1199, 6],
+        itemsDesktopSmall: [979, 6],
+        pagination: false
+    });
 
-     $("#tld-table").tablesorter();;
- });
- </script>
- {% endcontentfor %}
+    $("#tld-table").tablesorter();;
+});
+</script>
+{% endcontentfor %}

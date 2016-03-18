@@ -418,9 +418,9 @@ a.order-vps { color: #fff; font-size:17px; font-weight: 900; padding:6px 15px; b
 
 .domains-table {background: #fff; overflow: hidden; padding: 45px 0; }
 #tld-table {min-width:100%; border:1px solid #DFE0E5; font-family: 'hind', sans-serif; background: #EDEEF2; }
-#tld-table thead th {background:#77B499; color:#fff!important; font-weight:700;  font-size:13px; position:relative; cursor: pointer; box-shadow:-1px 0px 0px 0px rgba(107, 160, 136, 1);}
-#tld-table thead th:before { position:absolute; font-family: FontAwesome; top:15px; right:12px; content: "\f0dc"; }
-#tld-table th {font-weight: normal;    font-smoothing: antialiased;   padding:16px 12px; color: #6E6E6E;   font-size: 15px; background: #FFFFFF; }
+#tld-table thead th {background:#77B499; color:#fff!important; font-weight:700;  font-size:13px; position:relative; cursor: pointer; -webkit-box-shadow: -1px 0px 0px 0px rgba(107, 160, 136, 1);-moz-box-shadow:    -1px 0px 0px 0px rgba(107, 160, 136, 1);box-shadow:         -1px 0px 0px 0px rgba(107, 160, 136, 1);}
+#tld-table thead th:before {        position:absolute;        font-family: FontAwesome;        top:15px;        right:12px;        content: "\f0dc";    }
+#tld-table th {font-weight: normal;    -webkit-font-smoothing: antialiased;   padding:16px 12px; color: #6E6E6E;   font-size: 15px; background: #FFFFFF; }
 #tld-table td {color: #6E6E6E;    padding:16px 12px; font-size: 15px; border-bottom:1px solid #DFE0E5; text-align: center;}
 #tld-table td:first-child { font-weight:bold; text-align: left; }
 #tld-table thead th:first-child { text-align: left; }
